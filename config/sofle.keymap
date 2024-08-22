@@ -150,9 +150,11 @@
 &kp GRAVE      &kp N1             &kp N2           &kp N3           &kp N4        &kp N5                              &kp N6     &kp N7        &kp N8            &kp N9            &kp N0              &kp TAB
 &kp BACKSPACE  &kp SQT            &kp COMMA        &kp DOT          &kp P         &kp Y                               &kp F      &kp G         &kp C             &kp R             &kp L               &kp BACKSLASH
 &kp ESCAPE     &hml LEFT_SHIFT A  &hml LEFT_ALT O  &hml LEFT_GUI E  &hml LCTRL U  &kp I                               &kp D      &hmr RCTRL H  &hmr RIGHT_GUI T  &hmr RIGHT_ALT N  &hmr RIGHT_SHIFT S  &kp MINUS
-&kp LSHFT      &kp SEMICOLON      &kp Q            &kp J            &kp K         &kp X      &kp C_MUTE    &none      &kp B      &kp M         &kp W             &kp V             &kp Z               &kp RSHFT
+&kp LSHFT      &kp SEMICOLON      &kp Q            &kp J            &kp K         &kp X      &kp C_MUTE    &none      &kp B      &kp M         &kp W             &kp V             &kp Z               &kp SLASH
                                   &kp LEFT_GUI     &kp LEFT_ALT     &kp LCTRL     &mo LOWER  &kp SPACE     &kp ENTER  &mo RAISE  &kp RCTRL     &kp RALT          &kp RGUI
             >;
+
+            sensor-bindings = <&inc_dec_kp K_VOLUME_UP2 K_VOLUME_DOWN2>;
         };
     };
 };
