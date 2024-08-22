@@ -144,5 +144,15 @@
                                     &none            &none            &none            &none            &none              &none  &none          &none          &none          &none
             >;
         };
+
+        layer_4 {
+            bindings = <
+&kp GRAVE  &kp NUMBER_1  &trans  &trans  &trans  &trans                    &trans  &trans  &trans  &trans  &trans  &trans
+&trans     &trans        &trans  &trans  &trans  &trans                    &trans  &trans  &trans  &trans  &trans  &trans
+&trans     &trans        &trans  &trans  &trans  &trans                    &trans  &trans  &trans  &trans  &trans  &trans
+&trans     &trans        &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans  &trans
+                         &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans
+            >;
+        };
     };
 };
