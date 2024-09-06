@@ -50,7 +50,7 @@
             #binding-cells = <2>;
             tapping-term-ms = <280>;
             flavor = "balanced";
-            hold-trigger-key-positions = <0 1 2 3 4 5 12 13 14 15 16 17 24 25 26 27 28 29 36 37 38 39 40 41 42 50 51 52 53 54 46 35 6 55 56 57 58 59>;
+            hold-trigger-key-positions = <0 1 2 3 4 5 12 13 14 15 16 17 24 25 26 27 28 29 36 37 38 39 40 41 42 50 51 52 53 54 55 56 57 58 59>;
             require-prior-idle-ms = <150>;
             quick-tap-ms = <175>;
             retro-tap;
@@ -63,11 +63,11 @@
 
         dvorak {
             bindings = <
-&kp GRAVE      &kp N1             &kp N2           &kp N3           &kp N4        &kp N5                           &kp N6  &kp N7        &kp N8            &kp N9            &kp N0              &kp TAB
-&kp BACKSPACE  &kp Q              &kp W            &kp F            &kp P         &kp G                            &kp K   &kp L         &kp U             &kp Y             &kp SEMICOLON       &kp BACKSLASH
-&kp ESCAPE     &hml LEFT_SHIFT A  &hml LEFT_ALT R  &hml LEFT_GUI S  &hml LCTRL T  &kp D                            &kp H   &hmr RCTRL N  &hmr RIGHT_GUI E  &hmr RIGHT_ALT I  &hmr RIGHT_SHIFT O  &kp SQT
-&kp LSHFT      &kp Z              &kp X            &kp C            &kp V         &kp B   &kp C_MUTE    &none      &kp J   &kp M         &kp COMMA         &kp DOT           &kp SLASH           &kp MINUS
-                                  &kp LEFT_GUI     &kp LEFT_ALT     &kp LCTRL     &mo 1   &kp SPACE     &kp ENTER  &mo 2   &kp RCTRL     &kp RALT          &kp RGUI
+&kp GRAVE      &kp N1             &kp N2        &kp N3           &kp N4        &kp N5                           &kp N6  &kp N7        &kp N8                &kp N9                &kp N0                  &kp TAB
+&kp BACKSPACE  &kp Q              &kp W         &kp F            &kp P         &kp G                            &kp K   &kp L         &kp U                 &kp Y                 &kp SEMICOLON           &kp BACKSLASH
+&kp ESCAPE     &kp A              &kp R         &kp S            &kp T         &kp D                            &kp H   &kp N         &kp E                 &kp I                 &kp O                   &kp SQT
+&kp LSHFT      &hml LEFT_SHIFT Z  &hml RALT X   &hml LEFT_GUI C  &hml LCTRL V  &kp B   &kp C_MUTE    &none      &kp J   &hmr RCTRL M  &hmr RIGHT_GUI COMMA  &hmr LEFT_ALT PERIOD  &hmr RIGHT_SHIFT SLASH  &kp MINUS
+                                  &kp LEFT_GUI  &kp LEFT_ALT     &kp LCTRL     &mo 1   &kp SPACE     &kp ENTER  &mo 2   &kp RCTRL     &kp RALT              &kp RGUI
             >;
 
             sensor-bindings =
