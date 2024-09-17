@@ -61,13 +61,13 @@
     keymap {
         compatible = "zmk,keymap";
 
-        dvorak {
+        colemak {
             bindings = <
-&kp GRAVE      &kp N1             &kp N2        &kp N3           &kp N4        &kp N5                           &kp N6  &kp N7        &kp N8                &kp N9                &kp N0                  &kp TAB
-&kp TAB        &kp Q              &kp W         &kp F            &kp P         &kp G                            &kp K   &kp L         &kp U                 &kp Y                 &kp SEMICOLON           &kp BACKSLASH
-&kp ESCAPE     &kp A              &kp R         &kp S            &kp T         &kp D                            &kp H   &kp N         &kp E                 &kp I                 &kp O                   &kp SQT
-&kp LSHFT      &hml LEFT_SHIFT Z  &hml RALT X   &hml LEFT_GUI C  &hml LCTRL V  &kp B   &kp C_MUTE    &none      &kp J   &hmr RCTRL M  &hmr RIGHT_GUI COMMA  &hmr LEFT_ALT PERIOD  &hmr RIGHT_SHIFT SLASH  &kp MINUS
-                                  &kp LEFT_GUI  &kp LEFT_ALT     &kp BACKSPACE &mo 1   &kp SPACE     &kp ENTER  &mo 2   &kp DEL       &kp RALT              &kp RGUI
+&kp GRAVE      &kp N1             &kp N2        &kp N3           &kp N4         &kp N5                           &kp N6  &kp N7        &kp N8                &kp N9                &kp N0                  &kp TAB
+&kp BACKSPACE  &kp Q              &kp W         &kp F            &kp P          &kp G                            &kp K   &kp L         &kp U                 &kp Y                 &kp SEMICOLON           &kp BACKSLASH
+&kp ESCAPE     &kp A              &kp R         &kp S            &kp T          &kp D                            &kp H   &kp N         &kp E                 &kp I                 &kp O                   &kp SQT
+&kp LSHFT      &hml LEFT_SHIFT Z  &hml RALT X   &hml LEFT_GUI C  &hml LCTRL V   &kp B   &kp C_MUTE    &none      &kp J   &hmr RCTRL M  &hmr RIGHT_GUI COMMA  &hmr LEFT_ALT PERIOD  &hmr RIGHT_SHIFT SLASH  &kp MINUS
+                                  &kp LEFT_GUI  &kp LEFT_ALT     &kp BACKSPACE  &mo 1   &kp SPACE     &kp ENTER  &mo 2   &kp DEL       &kp RALT              &kp RGUI
             >;
 
             sensor-bindings =
