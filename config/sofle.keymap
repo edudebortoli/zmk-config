@@ -61,13 +61,13 @@
     keymap {
         compatible = "zmk,keymap";
 
-        dvorak {
+        qwerty {
             bindings = <
-&kp GRAVE      &kp N1             &kp N2        &kp N3           &kp N4        &kp N5                           &kp N6  &kp N7        &kp N8                &kp N9                &kp N0                  &kp TAB
-&kp BACKSPACE  &kp Q              &kp W         &kp F            &kp P         &kp G                            &kp K   &kp L         &kp U                 &kp Y                 &kp SEMICOLON           &kp BACKSLASH
-&kp ESCAPE     &kp A              &kp R         &kp S            &kp T         &kp D                            &kp H   &kp N         &kp E                 &kp I                 &kp O                   &kp SQT
-&kp LSHFT      &hml LEFT_SHIFT Z  &hml RALT X   &hml LEFT_GUI C  &hml LCTRL V  &kp B   &kp C_MUTE    &none      &kp J   &hmr RCTRL M  &hmr RIGHT_GUI COMMA  &hmr LEFT_ALT PERIOD  &hmr RIGHT_SHIFT SLASH  &kp MINUS
-                                  &kp LEFT_GUI  &kp LEFT_ALT     &kp LCTRL     &mo 1   &kp SPACE     &kp ENTER  &mo 2   &kp RCTRL     &kp RALT              &kp RGUI
+&kp GRAVE   &kp N1             &kp N2        &kp N3           &kp N4         &kp N5                           &kp N6  &kp N7        &kp N8                &kp N9                &kp N0                  &kp CAPSLOCK
+&kp TAB     &kp Q              &kp W         &kp E            &kp R          &kp T                            &kp Y   &kp U         &kp I                 &kp O                 &kp P                   &kp BACKSLASH
+&kp ESCAPE  &kp A              &kp S         &kp D            &kp F          &kp G                            &kp H   &kp J         &kp K                 &kp L                 &kp SEMICOLON           &kp SQT
+&kp LSHFT   &hml LEFT_SHIFT Z  &hml RALT X   &hml LEFT_GUI C  &hml LCTRL V   &kp B   &kp C_MUTE    &none      &kp N   &hmr RCTRL M  &hmr RIGHT_GUI COMMA  &hmr LEFT_ALT PERIOD  &hmr RIGHT_SHIFT SLASH  &kp MINUS
+                               &kp LEFT_GUI  &kp LEFT_ALT     &kp BACKSPACE  &mo 1   &kp SPACE     &kp ENTER  &mo 2   &kp DELETE    &kp RALT              &kp RGUI
             >;
 
             sensor-bindings =
@@ -108,11 +108,11 @@
             //                |      |       |       |      |      |  |      |      |      |       |      |
 
             bindings = <
-&bt BT_CLR  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4                    &trans     &trans    &trans    &trans     &trans   &trans
-&trans      &kp INS       &kp PSCRN     &kp K_CMENU   &trans        &trans                          &kp PG_UP  &trans    &kp UP    &trans     &kp N0   &trans
-&trans      &kp LALT      &kp LCTRL     &kp LSHFT     &trans        &kp CLCK                        &kp PG_DN  &kp LEFT  &kp DOWN  &kp RIGHT  &kp DEL  &kp BSPC
-&trans      &kp K_UNDO    &kp K_CUT     &kp K_COPY    &kp K_PASTE   &trans        &trans    &trans  &trans     &trans    &trans    &trans     &trans   &trans
-                          &trans        &trans        &trans        &trans        &trans    &trans  &trans     &trans    &trans    &trans
+&bt BT_CLR  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3       &bt BT_SEL 4                       &trans     &trans    &trans    &trans     &trans   &trans
+&trans      &kp INS       &kp PSCRN     &kp K_CMENU   &kp C_VOLUME_DOWN  &kp K_VOLUME_UP                    &kp PG_UP  &kp HOME  &kp UP    &kp END    &kp N0   &trans
+&trans      &kp LALT      &kp LCTRL     &kp LSHFT     &trans             &kp CLCK                           &kp PG_DN  &kp LEFT  &kp DOWN  &kp RIGHT  &kp DEL  &kp BSPC
+&trans      &kp K_UNDO    &kp K_CUT     &kp K_COPY    &kp K_PASTE        &trans           &trans    &trans  &trans     &trans    &trans    &trans     &trans   &trans
+                          &trans        &trans        &trans             &trans           &trans    &trans  &trans     &trans    &trans    &trans
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp PG_UP PG_DN>;
@@ -130,33 +130,10 @@
             bindings = <
 &bt BT_CLR         &bt BT_SEL 0     &bt BT_SEL 1   &bt BT_SEL 2   &bt BT_SEL 3   &bt BT_SEL 4                             &none  &none  &none  &none  &none  &none
 &ext_power EP_TOG  &bt BT_DISC 0    &bt BT_DISC 1  &bt BT_DISC 2  &bt BT_DISC 3  &bt BT_DISC 4                            &none  &none  &none  &none  &none  &none
-&none              &rgb_ug RGB_BRD  &tog 4         &tog 0         &none          &none                                    &none  &none  &none  &none  &none  &none
+&none              &rgb_ug RGB_BRD  &none          &none          &none          &none                                    &none  &none  &none  &none  &none  &none
 &none              &none            &none          &none          &none          &none          &rgb_ug RGB_TOG    &none  &none  &none  &none  &none  &none  &none
                                     &none          &none          &none          &none          &none              &none  &none  &none  &none  &none
             >;
-        };
-
-        querty {
-            display-name = "default";
-
-            // ------------------------------------------------------------------------------------------------------------
-            // |   `   |  1  |  2  |  3   |  4   |  5   |                   |  6   |  7    |  8    |  9   |   0   |       |
-            // |  ESC  |  Q  |  W  |  E   |  R   |  T   |                   |  Y   |  U    |  I    |  O   |   P   | BKSPC |
-            // |  TAB  |  A  |  S  |  D   |  F   |  G   |                   |  H   |  J    |  K    |  L   |   ;   |   '   |
-            // | SHIFT |  Z  |  X  |  C   |  V   |  B   |  MUTE  |  |       |  N   |  M    |  ,    |  .   |   /   | SHIFT |
-            //               | GUI | ALT  | CTRL | LOWER|  ENTER |  | SPACE | RAISE| CTRL  | ALT   | GUI  |
-
-            bindings = <
-&kp GRAVE      &kp N1             &kp N2           &kp N3           &kp N4        &kp N5                           &kp N6  &kp N7        &kp N8            &kp N9            &kp N0                      &kp TAB
-&kp BACKSPACE  &kp Q              &kp W            &kp E            &kp R         &kp T                            &kp Y   &kp U         &kp I             &kp O             &kp P                       &kp BACKSLASH
-&kp ESCAPE     &hml LEFT_SHIFT A  &hml LEFT_ALT S  &hml LEFT_GUI D  &hml LCTRL F  &kp G                            &kp H   &hmr RCTRL J  &hmr RIGHT_GUI K  &hmr RIGHT_ALT L  &hmr RIGHT_SHIFT SEMICOLON  &kp SQT
-&kp LSHFT      &kp Z              &kp X            &kp C            &kp V         &kp B   &kp C_MUTE    &none      &kp N   &kp M         &kp COMMA         &kp DOT           &kp FSLH                    &kp RSHFT
-                                  &kp LEFT_GUI     &kp LEFT_ALT     &kp LCTRL     &mo 1   &kp SPACE     &kp ENTER  &mo 2   &kp RCTRL     &kp RALT          &kp RGUI
-            >;
-
-            sensor-bindings =
-                <&inc_dec_kp C_VOLUME_UP K_VOLUME_DOWN>,
-                <&inc_dec_kp RC(PLUS) RC(MINUS)>;
         };
     };
 };
