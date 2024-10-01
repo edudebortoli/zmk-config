@@ -70,7 +70,9 @@
                                   &kp LEFT_GUI  &kp LEFT_ALT     &kp LCTRL     &mo 1   &kp SPACE     &kp ENTER  &mo 2   &kp DEL       &kp RALT              &kp RGUI
             >;
 
-            sensor-bindings = <&inc_dec_kp A B>, <&inc_dec_kp A B>;
+            sensor-bindings =
+                <&inc_dec_kp C_VOLUME_UP C_VOLUME_DOWN>,
+                <&inc_dec_kp LC(PLUS) LC(MINUS)>;
         };
 
         lower_layer {
