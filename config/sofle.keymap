@@ -61,9 +61,9 @@
         colemak-bkp {
             bindings = <
 &kp GRAVE      &kp N1             &kp N2           &kp N3           &kp N4        &kp N5                           &kp N6  &kp N7        &kp N8                &kp N9                 &kp N0                  &kp TAB
-&kp BACKSPACE  &kp Q              &kp W            &kp F            &kp P         &kp G                            &kp K   &kp L         &kp U                 &kp Y                  &kp SEMICOLON           &kp BACKSLASH
-&kp ESCAPE     &kp A              &kp R            &kp S            &kp T         &kp D                            &kp H   &kp N         &kp E                 &kp I                  &kp O                   &kp SQT
-&kp LSHFT      &hml LEFT_SHIFT Z  &hml LEFT_ALT X  &hml LEFT_GUI C  &hml LCTRL V  &kp B   &kp C_MUTE    &none      &kp J   &hmr RCTRL M  &hmr RIGHT_GUI COMMA  &hmr RIGHT_ALT PERIOD  &hmr RIGHT_SHIFT SLASH  &kp MINUS
+&kp BACKSPACE  &kp Q              &kp W            &kp E            &kp R         &kp T                            &kp Y   &kp U         &kp I                 &kp O                  &kp P                   &kp BACKSLASH
+&kp ESCAPE     &kp A              &kp S            &kp D            &kp F         &kp G                            &kp H   &kp J         &kp K                 &kp L                  &kp SEMICOLON           &kp SQT
+&kp LSHFT      &hml LEFT_SHIFT Z  &hml LEFT_ALT X  &hml LEFT_GUI C  &hml LCTRL V  &kp B   &kp C_MUTE    &none      &kp N   &hmr RCTRL M  &hmr RIGHT_GUI COMMA  &hmr RIGHT_ALT PERIOD  &hmr RIGHT_SHIFT SLASH  &kp MINUS
                                   &kp LEFT_GUI     &kp LEFT_ALT     &kp LCTRL     &mo 1   &kp SPACE     &kp ENTER  &mo 2   &kp RCTRL     &kp RALT              &kp DEL
             >;
 
