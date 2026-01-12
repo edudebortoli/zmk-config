@@ -56,6 +56,25 @@
         };
     };
 
+    combos {
+        compatible = "zmk,combos";
+
+        backstick {
+            bindings = <&kp GRAVE>;
+            key-positions = <13 14>;
+        };
+
+        tab {
+            bindings = <&kp TAB>;
+            key-positions = <14 15>;
+        };
+
+        delete {
+            bindings = <&kp DELETE>;
+            key-positions = <46 47>;
+        };
+    };
+
     keymap {
         compatible = "zmk,keymap";
 
