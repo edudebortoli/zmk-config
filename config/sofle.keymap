@@ -68,7 +68,7 @@
 
         backstick {
             bindings = <&kp GRAVE>;
-            key-positions = <13 14>;
+            key-positions = <14 15>;
         };
 
         delete {
@@ -107,7 +107,7 @@
 
         combo_tab {
             timeout-ms = <50>;
-            key-positions = <14 15>;
+            key-positions = <15 16>;
             bindings = <&kp TAB>;
         };
 
@@ -119,6 +119,11 @@
         ralt {
             bindings = <&sk RIGHT_ALT>;
             key-positions = <44 45>;
+        };
+
+        jk_esc {
+            bindings = <&kp ESCAPE>;
+            key-positions = <31 32>;
         };
     };
 
